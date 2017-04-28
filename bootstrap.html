@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Put on yer BOOTS and let's get down to it!</title>
+	
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	
+<style>
+/*styling with CSS - style tag after Bootstrap CDNs so it takes priority*/
+img.resize {
+    max-width:25%;
+   max-height:25%;
+   float: left;
+   margin: 10px;
+   box-shadow: 8px 8px 10px #aaa;
+}
+p.code {
+    color: navajowhite;
+}
+img.resize2 {
+    max-width:75%;
+    max-height:75%;
+    border-radius: 20%;
+    box-shadow: 8px 8px 10px #aaa;
+}
+h1 {
+    color: #1D2731;
+}
+img.resize3 {
+    max-width:70%;
+   max-height:70%;
+   float: left;
+   margin: 10px;
+   box-shadow: 8px 8px 10px #aaa;
+}
+body {
+background: linear-gradient(to right, #328CC1 , navajowhite);
+text-align: center;
+color: #0B3C5D;
+font-family: monospace;
+font-size: 20px;
+letter-spacing: 4px;
+line-height: 200%;
+}
+</style>
+</head>
+
+<body>
+<!--Begin HTML - div container in Bootstrap-->
+	<div class="container">
+		<img class="resize2" src="http://revelwallpapers.net/d/737039356461446236646D5F637169587A593939344B4443787168315A413D3D/cat-in-boots.jpg">
+		<br>
+<!--!!!!!!!!!
+!!!!!!!!!
+GLYPHICONS!
+!!!!!!!!!
+!!!!!!!!!-->
+		<h1>Glyphicons!</h1>
+		<p class="glyph">
+			<span class="definition">Glyphicons</span> are little picture symbols we can use on our website! TOTES ADORBS!
+			<br>
+			<i>Kind of like Webdings/Wingdings/whatever that silly font was called.</i>
+			<br>
+			<p id="glyphEx">
+				Check out this apple. <span class="glyphicon glyphicon-apple" aria-hidden="true"></span>
+                <br>
+				Seriously though. How cute is this here martini glass?? <span class="glyphicon glyphicon-glass" aria-hidden="true"></span>
+				<br>
+				GET OUT OF TOWN. A floppy disk? SQUEE!! <span class="glyphicon glyphicon-floppy-disk" aria-hidden="true"></span>
+				<br>
+				<sub><i>(Floppies may be a little outdated...but, still. c'mon now.)</i></sub>
+				<br><br>
+				<b>YOU MAY BE WONDERING HOW THE HECK TO USE THESE LIL GUYS!</b><br>
+				There is a full list of built-in Glyphicons on the <a href=http://getbootstrap.com/components/>Boostrap Website</a>, 
+				along with additional packages available to download at <a href=http://glyphicons.com/>Glyphicons website</a>. Apparently they have over 250 for free along with additional available for a fee. <br>
+				<p class="code">I bet you're SUPER excited! Okay, now for the code.
+				<br>
+				<pre><code>
+					&lt; span class="glyphicon glyphicon-YOURICON" aria-hidden="true"&gt;&lt;/span&gt;
+				</pre></code>
+				<br>
+				And that's it!! Have fun!~!!@!~!!$@*
+			</p>
+		</p>
+<!--!!!!!!!!!
+!!!!!!!!!
+BADGES!
+!!!!!!!!!
+!!!!!!!!!-->
+		<p class="badges">
+			<h1>Badges!</h1>
+			<p id="badgesEx">Cool, so you know when you open up your gmail and it's like "OMG YOU HAVE 284814 UNREAD EMAILS!"
+			<br>
+			<img src="gmail.png" class="resize">
+			<br>
+			<i>(Maybe you don't know because you're more responsible than I am about checking emails...Let's just assume you're not, though.)</i>
+			<br>
+			Yeah! So that number up there is what's called a <span class="definition">BADGE!</span>
+			<br>
+			Badges are a numerical indicator showing how many items are associated with a link.
+			<br>
+			<a href="http://iheartcats.com/">How many cat pictures do you need to look at? 
+			<span class="badge">124812847</span></a>
+			<br><br>
+			You can also be super fancy and put your badges in a button!<br>
+			<button type="button" class="btn btn-primary">THIS R BUTTON <span class="badge">200</span></button><br>
+			<p class="code">Time for...(dramatic pause)...THE CODE!
+				<br>
+				<pre><code> (This one is without button) <br>&lt;a href="http://iheartcats.com/"&gt;How many cat pictures do you need to look at? &lt;span class="badge"&gt;124812847&lt;/span&gt; </p>
+				<br><br>(This one is with button)<br> &lt;button type="button" class="btn btn-primary"&gt;THIS R BUTTON &lt;span class="badge"&gt;200&lt;/span&gt;&lt;/button&gt;
+				</pre></code>
+			</p>
+		</p>
+<!--!!!!!!!!!
+!!!!!!!!!
+LABELS!
+!!!!!!!!!
+!!!!!!!!!-->
+		<p class="labels"><h1>Labels!</h1>
+			<img src="http://i.imgur.com/vjn7Tws.jpg" class="resize">
+			<p id="labelsEx">
+				Additional information is always helpful, right? That's where <span class="definition">labels</span> come in!
+				<br>
+				.label is a class! It contains six contextual classes--let's look at 'em!
+				<br>
+				<i>.label-default, .label-primary, .label-success, .label-info, .label-warning </i> or <i> .label-danger</i>
+				<br>
+				We're going to use our "span" friend again to utilize these bad boys. Wanna see what they do?! ME TOO!
+				<br>
+				<span class="label label-default">Default Label</span>
+				<span class="label label-primary">Primary</span>
+				<span class="label label-success">Success!!!!!</span>
+				<span class="label label-info">Info</span>
+				<span class="label label-warning">Warning!</span>
+				<span class="label label-danger">DANGER!</span>
+				<br>
+				Awesome! So much label! So many wow!
+				<br>
+				<p class="code">Ready for the code again?
+				<br>
+				<pre><code>
+				&lt;span class="label label-default"&gt;Default Label&lt;/span&gt;<br>
+				&lt;span class="label label-primary"&gt;Primary Label&lt;/span&gt;<br>
+				&lt;span class="label label-success"&gt;Success Label&lt;/span&gt;<br>
+				&lt;span class="label label-info"&gt;Info Label&lt;/span&gt;<br>
+				&lt;span class="label label-warning"&gt;Warning Label&lt;/span&gt;<br>
+				&lt;span class="label label-danger"&gt;Danger Label&lt;/span&gt;<br>
+				</pre></code>
+			</p>
+		</p>
+<!--!!!!!!!!!
+!!!!!!!!!
+WELLS!
+!!!!!!!!!
+!!!!!!!!!-->
+		<p class="wells">
+			<h1>Wells!</h1>
+			<p id="song"> 
+				<img src="http://kittentoob.toobnetwork.com/wp-content/uploads/sites/4/2012/02/sad-cat.jpg" class="resize"> 
+				<i>Ding dong bell, pussy's in the well! Who put her in? Little Johnny Flynn.</i>
+				<br>
+				<br>
+				First off, let's punch that dude, pretty sure that's animal cruelty.
+			</p>
+			<br>
+			<p id="wellsDef">
+				In Bootstrap, however, <span class="definition">wells</span> are part of a class (.well) 
+				that add a rounded border around an element using a grey color and padding.
+				<br> 
+				You can change the size of a well but the default is medium-sized. 
+				<br>
+				<div class="well well-sm">mew</div>
+				<div class="well">Meow</div>
+				<div class="well well-lg">MEEEE-YOOOW!</div><br>
+				<p class="code">Ready for some more code?
+					<pre><code>
+					&lt;div class="well well-sm"&gt;mew&lt;/div&gt;<br>
+					&lt;div class="well"&gt;Meow&lt;/div&gt;<br>
+					&lt;div class="well well-lg"&gt;MEEEE-YOOOW!&lt;/div&gt;
+					</pre></code>
+			</p>
+		</p>
+<!--!!!!!!!!!
+!!!!!!!!!
+ALERTS!
+!!!!!!!!!
+!!!!!!!!!-->
+		<p class="alerts"><h1>Alerts!</h1>
+			<p id="alertsDef">
+				Red alert! Red alert! <span class="alert">Alerts</span> are predefined in Bootstrap for easy access--SCORE!
+				<br>
+				<br>
+				The class this time is .alert, and the contextual classes are:
+				<br>
+				<i>.alert-sucess, .alert-info, .alert-warning </i> or <i>.alert-danger</i>
+				<br>
+				Let's look at it!
+				<br>
+				<div class="alert alert-success">
+					<strong>Success!</strong> Indicates a successful or positive action.
+				</div>
+				<div class="alert alert-info">
+					<strong>Info!</strong> Indicates a neutral informative change or action.
+				</div>
+				<div class="alert alert-warning">
+					<strong>Warning!</strong> Indicates a warning that might need attention.
+				</div>
+				<div class="alert alert-danger">
+					<strong>Danger!</strong> Indicates a dangerous or potentially negative action.				
+				</div>
+				<img src="http://canitbesaturdaynow.com/images/fpics/3244/1264885670882__large.jpg" class="resize3">
+				<br><br><br>
+				WOW! Pretty colors!
+			</p>
+			<br><br><br><br><br><br>
+			<p class="code">
+				Code time!
+				<pre><code>
+				&lt;div class="alert alert-success"&gt;
+				&lt;strong&gt;Success!&lt;/strong&gt; Indicates a successful or positive action.
+				&lt;/div&gt;<br>
+				&lt;div class="alert alert-info"&gt;
+			    &lt;strong&gt;Info!&lt;/strong&gt; Indicates a neutral informative change or    action.
+				&lt;/div&gt;<br>
+				&lt;div class="alert alert-warning"&gt;
+  			    &lt;strong&gt;Warning!&lt;/strong&gt; Indicates a warning that might need         attention.
+				&lt;/div&gt;<br>
+				&lt;div class="alert alert-danger"&gt;
+				&lt;strong&gt;Danger!&lt;/strong&gt; Indicates a dangerous or potentially negative action.
+				&lt;/div&gt;
+				</pre></code>
+			</p>
+		</p>
+	</div>
+    <!--ends container-->
+    <!--beginning alert prompt-->
+	<script>
+	var ready = prompt("Are you ready to learn about GLYPHICONS, LABELS, BADGES, WELLS, and ALERTS!? please enter 'yes'");
+	if (ready === "yes"){
+		alert("STRAP ON YER BOOTS AND GET READY TO LEARN!");
+	}
+	else {
+		alert("No one cares about your wants or needs. STRAP ON YER BOOTS AND GET READY TO LEARN!")
+	}
+	</script>
+</body>
+</html>
